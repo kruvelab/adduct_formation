@@ -1,9 +1,10 @@
 library(tidyverse)
 library(stringr)
+library(webchem)
 source('fingerprints_hex_to_dataframe.R')
-source('calculating bond properties from graph.R')
+source('calculating_bond_properties_from_graph.R')
 
-setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/R codes for variouse things/Computational resources/PubChem")
+setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/PubChem")
 
 #----Combining all neccessary PubChemCIDs----
 compounds_SU <- read_delim("SU_adducts_CID.csv",
@@ -18,15 +19,46 @@ compounds_Corey <- read_delim("Corey_adducts_CID.csv",
                            delim = ",",
                            col_names = TRUE)
 
+compounds_Celma = read_delim("TableS1_CCS_RT_mz_DB_IUPA_charge.csv",
+                   delim = ",",
+                   col_names = TRUE)
+
+compounds_Celma = compounds_Celma %>%
+  filter(AdductSpecies == "[M+Na]" | AdductSpecies == "[M+H]")
+
+compounds_Picache = read_delim("20190304JAP_CCSdatabase_final.csv",
+                               delim = ",",
+                               col_names = TRUE)
+
+compounds_Picache_CID = compounds_Picache %>%
+  filter(Adduct == "[M+Na]" | Adduct == "[M+H]") %>%
+  select(CAS) %>%
+  unique() %>%
+  group_by(CAS) %>%
+  mutate(PubChemCID = fn_CAS_to_CID(CAS)) %>%
+  ungroup()
+
+compounds_Picache_CID = compounds_Picache_CID %>%
+  na.omit() %>%
+  mutate(PubChemCID = as.numeric(PubChemCID))
+
+compounds_Picache = compounds_Picache %>%
+  left_join(compounds_Picache_CID) 
+
+write_delim(compounds_Picache,
+            "Picache_adducts_CID.csv",
+            delim = ",")
+
 #collect all CID values that need to be looked up and 
-compounds <- compounds_Lorean %>% select(PubChemCID) %>%
+compounds <- compounds_Celma %>% select(PubChemCID) %>%
   bind_rows(compounds_SU %>% select(PubChemCID)) %>%
   bind_rows(compounds_UT %>% select(PubChemCID)) %>%
   bind_rows(compounds_Corey %>% select(PubChemCID)) %>%
+  bind_rows(compounds_Picache_CID %>% select(PubChemCID)) %>%
   na.omit() %>%
   unique()
 
-data_path <- "C:/Users/annel/OneDrive - Kruvelab/Kruvelab/R codes for variouse things/Computational resources/PubChem/unread files"
+data_path <- "C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/PubChem/fingerprints"
 
 files <- dir(data_path, pattern = "*.csv") # get file names
 remove <- c("fingerprint_Compound_", ".sdf.csv") #idetify the part of filename that will be removed
