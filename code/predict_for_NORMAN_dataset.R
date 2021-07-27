@@ -1,4 +1,5 @@
 library(plotly)
+setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/IE mudeli script ja failid/adduct_formation/data/NORMAN")
 
 NORMAN = read_delim("susdat_2019-12-06-112040.csv",
                     delim = ",",
@@ -104,16 +105,35 @@ write_delim(adducts_summary_NORMAN,
             "PubChem_fingerprints_bond_properties_NORMAN.csv",
             delim = ",")
 
-NORMAN_pred = adducts_summary_NORMAN %>%
-  na.omit() %>%
-  mutate(M_Na_pred = predict(classifier_ada, newdata = adducts_summary_NORMAN, type = "prob")[,2])
+adducts_summary_NORMAN = read_delim("PubChem_fingerprints_bond_properties_NORMAN.csv",
+                                    delim = ",",
+                                    col_names = TRUE) %>%
+  na.omit()
+
+
+setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/IE mudeli script ja failid/adduct_formation/data/training")
+
+classifier_svmPoly = readRDS("classifier_svmPoly.rds")
+
+setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/IE mudeli script ja failid/adduct_formation/data/NORMAN")
+
+NORMAN_pred = adducts_summary_NORMAN  %>%
+  mutate(M_Na_pred = predict(classifier_svmPoly, newdata = adducts_summary_NORMAN, type = "prob")[,2])
+
+
+
+NORMAN_short = NORMAN_pred %>%
+  select(PubChemCID, M_Na_pred, Monoiso_Mass) %>%
+  left_join(NORMAN %>%
+              mutate(PubChemCID = as.numeric(PubChemCID)))
+NORMAN_short = NORMAN_short %>%
+  na.omit()
 
 NORMAN_adduct_plot = 
-ggplot(data = NORMAN_short %>%
-         filter(Monoiso_Mass < 300)) +
+  ggplot(data = NORMAN_short %>%
+           filter(Monoiso_Mass < 300)) +
   geom_point(mapping = aes(x = Monoiso_Mass,
-                           y = M_Na_pred,
-                           text = Name),
+                           y = M_Na_pred),
              alpha = 1/5) +
   labs(x = "monoisotopic mass (Da)", y = "probability of adduct formation") +
   my_theme
@@ -125,15 +145,6 @@ ggsave("adduct_formation_NORMAN.svg",
        height = 8,
        units = "cm")
 
-NORMAN_short = NORMAN_pred %>%
-  select(PubChemCID, M_Na_pred, Monoiso_Mass) %>%
-  left_join(NORMAN %>%
-              mutate(PubChemCID = as.numeric(PubChemCID)) %>%
-              select(PubChemCID, Name, CAS))
-NORMAN_short = NORMAN_short %>%
-  na.omit()
-
-
 write_delim(NORMAN_short,
             "adduct_formation_NORMAN_short.csv",
             delim = ",")
@@ -141,34 +152,96 @@ NORMAN_short = read_delim("adduct_formation_NORMAN_short.csv",
                           delim = ",",
                           col_names = TRUE)
 
-available_compounds = read_delim("MMK_chemicals.csv",
-                                 delim = ",",
-                                 col_names = TRUE)
+NORMAN_short = NORMAN_short %>%
+  mutate(M_Na_pred_round = case_when(
+    M_Na_pred > 0.51 ~ 1,
+    TRUE ~ 0
+  ))
 
-NORMAN_available_at_MMK = NORMAN_short %>%
-  left_join(available_compounds %>%
-              select(CAS, Rum))
-
-NORMAN_available_at_MMK = NORMAN_available_at_MMK %>%
-  na.omit()
-
-NORMAN_large_dif = NORMAN_available_at_MMK %>%
-  group_by(Monoiso_Mass) %>%
-  mutate(prob_dif = max(M_Na_pred) - min(M_Na_pred)) %>%
-  ungroup() %>%
-  arrange(desc(prob_dif))
-
-write_delim(NORMAN_large_dif,
-            "NORMA_dif_available_MMK.csv",
-            delim = ",")
 
 NORMAN_adduct_plot = 
-  ggplot(data = NORMAN_available_at_MMK ) +
+  ggplot(data = NORMAN_short %>%
+           filter(Monoiso_Mass < 300)) +
   geom_point(mapping = aes(x = Monoiso_Mass,
                            y = M_Na_pred,
-                           text = Name),
+                           #text = Name,
+                           color = factor(M_Na_pred_round)),
              alpha = 1/5) +
+  scale_color_manual(values = c("#33658A", "#F26419")) +
   labs(x = "monoisotopic mass (Da)", y = "probability of adduct formation") +
   my_theme
 
-ggplotly(NORMAN_adduct_plot)
+NORMAN_adduct_plot
+
+NORMAN_adduct_plot_small = 
+  ggplot(data = NORMAN_short %>%
+           filter(Monoiso_Mass > 180.04 & Monoiso_Mass < 180.05)) +
+  geom_point(mapping = aes(x = Monoiso_Mass,
+                           y = M_Na_pred,
+                           text = PubChemCID,
+                           color = factor(M_Na_pred_round),
+                           alpha = factor(M_Na_pred_round))) +
+  geom_segment(mapping = aes(x = 180.0423,
+                             y = 0.32,
+                             xend = 180.043,
+                             yend = 0.28),
+               color = "#33658A") +
+  annotate(geom = 'text', 
+           x = 180.043, 
+           y = 0.26, 
+           label = expression(paste("caffeic acid")), 
+           parse = TRUE, 
+           colour = "#33658A", 
+           family = font, 
+           size = 3.5) +
+  geom_segment(mapping = aes(x = 180.0423,
+                             y = 0.74,
+                             xend = 180.043,
+                             yend = 0.78),
+               color = "#F26419") +
+  annotate(geom = 'text', 
+           x = 180.043, 
+           y = 0.85, 
+           label = expression(paste("monomethyl phthalate")), 
+           parse = TRUE, 
+           colour = "#F26419", 
+           family = font, 
+           size = 3.5) +
+  xlim(180.041, 180.044) +
+  #scale_x_continuous(breaks = seq(180.0418, 180.0432, 0.0005))+
+  scale_color_manual(values = c("#33658A", "#F26419")) +
+  scale_alpha_manual(values = c(1, 1)) +
+  ylim(0,1) +
+  labs(x = "monoisotopic mass (Da)", y = "probability of adduct formation") +
+  my_theme
+
+NORMAN_adduct_plot_small
+
+ggplotly(NORMAN_adduct_plot_small)
+
+NORMAN_higher_plot = 
+  plot_grid(NORMAN_adduct_plot, NORMAN_adduct_plot_small, 
+            labels = c("a)", "b)"),
+            nrow = 1,
+            label_size = fontsize,
+            label_fontfamily = font,
+            label_colour = basecolor,
+            label_fontface = "plain")
+
+NORMAN_higher_plot
+
+
+test = NORMAN_short %>%
+  group_by(Monoiso_Mass) %>%
+  summarise(M_Na_avg = mean(M_Na_pred_round)) %>%
+  ungroup()
+
+#not one isomer forms adducts
+121/569
+#21.3
+
+#all isomers form adducts
+110/569
+#19.3
+
+(569-110-121)/569

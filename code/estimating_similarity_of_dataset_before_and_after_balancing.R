@@ -1,6 +1,8 @@
 library(rcdk)
 library(tidyverse)
 library(ape)
+source("my_theme.R")
+setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/IE mudeli script ja failid/adduct_formation/data/training")
 
 dataset = read_delim("balanced_adduct_data_training.csv",
                       delim = ",",
@@ -13,46 +15,52 @@ plot(hc)
 y_hc = cutree(hc, 3) 
 dataset_with_class <- tibble(dataset, y_hc)
 
-colors = c("#390099", "#9e0059", "#ffbd00", "#ff0054", "#ff5400")
-colors = c("#d00000", "#ffba08", "#3f88c5", "#032b43", "#136f63")
-plot(as.phylo(hc), 
-     type = "fan", 
-     tip.color = colors[as.factor(dataset_with_class$Lab)],
-     cex = 0.6,
-     #label.offset = 1,
-     #no.margin = TRUE
-     )
+dend = as.dendrogram(hc)
+dend_data = ggdendro::dendro_data(dend, type = "rectangle")
+names(dend_data)
+dend_data$labels
+head(dend_data$segments)
+segments_data = dend_data$segments
 
-svg("dendrogram_balanced_data_from_fingerprints.svg",
-    height = 16,
-    width = 16)
+dataset_with_class = dataset_with_class %>%
+    mutate(label = row_number(),
+           Lab = case_when(
+               Lab == "Corey" ~ "Broeckling",
+               Lab == "SU" ~ "Costalunga",
+               Lab == "UT" ~ "Liigand",
+               TRUE ~ Lab
+           ))
 
-colors = c("red", "blue")
-plot(as.phylo(hc), 
-     type = "fan", 
-     tip.color = colors[as.factor(dataset_with_class$M_Na)],
-     cex = 0.6,
-     #label.offset = 1,
-     #no.margin = TRUE
-)
-svg("dendrogram_balanced_data_from_fingerprints_Adducts_1_0.svg",
-    height = 16,
-    width = 16)
+labels_data = dend_data$labels %>%
+    mutate(label = as.numeric(label)) %>%
+    left_join(dataset_with_class)
 
-library(proxy)
-s = proxy::as.simil(d)
-s = as_tibble(s)
-s = as.matrix(s)
-write_delim(s,
-            "similarity.csv",
-            delim = ",")
-small_s = s[1:50, 1:50]
-heatmap(s)
+p <- ggplot(data = segments_data ) + 
+    geom_segment(mapping = aes(x = x, 
+                               y = y, 
+                               xend = xend, 
+                               yend = yend),
+                 color = basecolor,
+                 size = 0.2) +
+    geom_point(data = labels_data, 
+              mapping = aes(x = x, 
+                            y = y,
+                            color = Lab),
+              shape = 15,
+              size = 5) +
+    scale_color_manual(values=c("#d00000", "#ffba08", "#3f88c5", "#032b43", "#136f63")) +
+    labs(x = "", y = "distance") +
+    my_theme +
+    theme(aspect.ratio = 1/3,
+          legend.position = "bottom",
+          axis.line.x = element_blank(),
+          axis.text.x = element_blank())
+    
 
-similarity = read_delim("similarity.csv",
-                        delim = ",",
-                        col_names = TRUE)
+print(p)
 
-svg("heatmap_balanced_data_from_fingerprints.svg",
-    height = 16,
-    width = 16)
+ggsave("dendrogram_balanced_data_from_fingerprints_ggplot.svg",
+       width = 16,
+       height = 16/773*328,
+       units = "cm")
+

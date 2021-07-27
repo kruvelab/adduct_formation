@@ -7,7 +7,7 @@ loadfonts(device = "win")
 
 #you can specify your fonts parameters and colors
 font <- choose_font("Raleway")
-fontsize <- 12
+fontsize <- 9
 basecolor <- "#14213d" #your base color for both font and lines
 
 #and you can specify a there that you will apply to all of your graphs
@@ -33,7 +33,9 @@ my_theme <-   theme(
                       color = basecolor),
   legend.key = element_blank(),
   strip.background = element_blank(),
-  strip.text = element_blank(),
+  strip.text = element_text(family = font,
+                            size = fontsize,
+                            color = basecolor),
   #to remove or adjust the position of the legend
   #"none" - is no legend; "top" "bottom", "right", "left";
   #or by coordinates. 
