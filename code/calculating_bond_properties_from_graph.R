@@ -183,5 +183,6 @@ bond_descriptors <- function(SMILES) {
   return(descriptors)
 }
 
+Vectorize(bond_descriptors)
 
 test <- bond_descriptors("COC1C(CC2CN3CCC4=C(C3CC2C1C(=O)OC)NC5=C4C=CC(=C5)OC)OC(=O)C6=CC(=C(C(=C6)OC)OC)OC")
