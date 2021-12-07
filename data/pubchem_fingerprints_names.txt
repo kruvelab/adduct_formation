@@ -1,0 +1,882 @@
+rowPC,description_PC,sir_absol_ind
+1,>= 4 H,528
+2,>= 8 H,529
+3,>= 16 H,530
+4,>= 32 H,531
+5,>= 1 Li,532
+6,>= 2 Li,533
+7,>= 1 B,534
+8,>= 2 B,535
+9,>= 4 B,536
+10,>= 2 C,537
+11,>= 4 C,538
+12,>= 8 C,539
+13,>= 16 C,540
+14,>= 32 C,541
+15,>= 1 N,542
+16,>= 2 N,543
+17,>= 4 N,544
+18,>= 8 N,545
+19,>= 1 O,546
+20,>= 2 O,547
+21,>= 4 O,548
+22,>= 8 O,549
+23,>= 16 O,550
+24,>= 1 F,551
+25,>= 2 F,552
+26,>= 4 F,553
+27,>= 1 Na,554
+28,>= 2 Na,555
+29,>= 1 Si,556
+30,>= 2 Si,557
+31,>= 1 P,558
+32,>= 2 P,559
+33,>= 4 P,560
+34,>= 1 S,561
+35,>= 2 S,562
+36,>= 4 S,563
+37,>= 8 S,564
+38,>= 1 Cl,565
+39,>= 2 Cl,566
+40,>= 4 Cl,567
+41,>= 8 Cl,568
+42,>= 1 K,569
+43,>= 2 K,570
+44,>= 1 Br,571
+45,>= 2 Br,572
+46,>= 4 Br,573
+47,>= 1 I,574
+48,>= 2 I,575
+49,>= 4 I,576
+50,>= 1 Be,577
+51,>= 1 Mg,578
+52,>= 1 Al,579
+53,>= 1 Ca,580
+54,>= 1 Sc,581
+55,>= 1 Ti,582
+56,>= 1 V,583
+57,>= 1 Cr,584
+58,>= 1 Mn,585
+59,>= 1 Fe,586
+60,>= 1 Co,587
+61,>= 1 Ni,588
+62,>= 1 Cu,589
+63,>= 1 Zn,590
+64,>= 1 Ga,591
+65,>= 1 Ge,592
+66,>= 1 As,593
+67,>= 1 Se,594
+68,>= 1 Kr,595
+69,>= 1 Rb,596
+70,>= 1 Sr,597
+71,>= 1 Y,598
+72,>= 1 Zr,599
+73,>= 1 Nb,600
+74,>= 1 Mo,601
+75,>= 1 Ru,602
+76,>= 1 Rh,603
+77,>= 1 Pd,604
+78,>= 1 Ag,605
+79,>= 1 Cd,606
+80,>= 1 In,607
+81,>= 1 Sn,608
+82,>= 1 Sb,609
+83,>= 1 Te,610
+84,>= 1 Xe,611
+85,>= 1 Cs,612
+86,>= 1 Ba,613
+87,>= 1 Lu,614
+88,>= 1 Hf,615
+89,>= 1 Ta,616
+90,>= 1 W,617
+91,>= 1 Re,618
+92,>= 1 Os,619
+93,>= 1 Ir,620
+94,>= 1 Pt,621
+95,>= 1 Au,622
+96,>= 1 Hg,623
+97,>= 1 Tl,624
+98,>= 1 Pb,625
+99,>= 1 Bi,626
+100,>= 1 La,627
+101,>= 1 Ce,628
+102,>= 1 Pr,629
+103,>= 1 Nd,630
+104,>= 1 Pm,631
+105,>= 1 Sm,632
+106,>= 1 Eu,633
+107,>= 1 Gd,634
+108,>= 1 Tb,635
+109,>= 1 Dy,636
+110,>= 1 Ho,637
+111,>= 1 Er,638
+112,>= 1 Tm,639
+113,>= 1 Yb,640
+114,>= 1 Tc,641
+115,>= 1 U,642
+116,>= 1 any ring size 3,643
+117,>= 1 saturated or aromatic carbon-only ring size 3,644
+118,>= 1 saturated or aromatic nitrogen-containing ring size 3,645
+119,>= 1 saturated or aromatic heteroatom-containing ring size 3,646
+120,>= 1 unsaturated non-aromatic carbon-only ring size 3,647
+121,>= 1 unsaturated non-aromatic nitrogen-containing ring size 3,648
+122,>= 1 unsaturated non-aromatic heteroatom-containing ring size 3,649
+123,>= 2 any ring size 3,650
+124,>= 2 saturated or aromatic carbon-only ring size 3,651
+125,>= 2 saturated or aromatic nitrogen-containing ring size 3,652
+126,>= 2 saturated or aromatic heteroatom-containing ring size 3,653
+127,>= 2 unsaturated non-aromatic carbon-only ring size 3,654
+128,>= 2 unsaturated non-aromatic nitrogen-containing ring size 3,655
+129,>= 2 unsaturated non-aromatic heteroatom-containing ring size 3,656
+130,>= 1 any ring size 4,657
+131,>= 1 saturated or aromatic carbon-only ring size 4,658
+132,>= 1 saturated or aromatic nitrogen-containing ring size 4,659
+133,>= 1 saturated or aromatic heteroatom-containing ring size 4,660
+134,>= 1 unsaturated non-aromatic carbon-only ring size 4,661
+135,>= 1 unsaturated non-aromatic nitrogen-containing ring size 4,662
+136,>= 1 unsaturated non-aromatic heteroatom-containing ring size 4,663
+137,>= 2 any ring size 4,664
+138,>= 2 saturated or aromatic carbon-only ring size 4,665
+139,>= 2 saturated or aromatic nitrogen-containing ring size 4,666
+140,>= 2 saturated or aromatic heteroatom-containing ring size 4,667
+141,>= 2 unsaturated non-aromatic carbon-only ring size 4,668
+142,>= 2 unsaturated non-aromatic nitrogen-containing ring size 4,669
+143,>= 2 unsaturated non-aromatic heteroatom-containing ring size 4,670
+144,>= 1 any ring size 5,671
+145,>= 1 saturated or aromatic carbon-only ring size 5,672
+146,>= 1 saturated or aromatic nitrogen-containing ring size 5,673
+147,>= 1 saturated or aromatic heteroatom-containing ring size 5,674
+148,>= 1 unsaturated non-aromatic carbon-only ring size 5,675
+149,>= 1 unsaturated non-aromatic nitrogen-containing ring size 5,676
+150,>= 1 unsaturated non-aromatic heteroatom-containing ring size 5,677
+151,>= 2 any ring size 5,678
+152,>= 2 saturated or aromatic carbon-only ring size 5,679
+153,>= 2 saturated or aromatic nitrogen-containing ring size 5,680
+154,>= 2 saturated or aromatic heteroatom-containing ring size 5,681
+155,>= 2 unsaturated non-aromatic carbon-only ring size 5,682
+156,>= 2 unsaturated non-aromatic nitrogen-containing ring size 5,683
+157,>= 2 unsaturated non-aromatic heteroatom-containing ring size 5,684
+158,>= 3 any ring size 5,685
+159,>= 3 saturated or aromatic carbon-only ring size 5,686
+160,>= 3 saturated or aromatic nitrogen-containing ring size 5,687
+161,>= 3 saturated or aromatic heteroatom-containing ring size 5,688
+162,>= 3 unsaturated non-aromatic carbon-only ring size 5,689
+163,>= 3 unsaturated non-aromatic nitrogen-containing ring size 5,690
+164,>= 3 unsaturated non-aromatic heteroatom-containing ring size 5,691
+165,>= 4 any ring size 5,692
+166,>= 4 saturated or aromatic carbon-only ring size 5,693
+167,>= 4 saturated or aromatic nitrogen-containing ring size 5,694
+168,>= 4 saturated or aromatic heteroatom-containing ring size 5,695
+169,>= 4 unsaturated non-aromatic carbon-only ring size 5,696
+170,>= 4 unsaturated non-aromatic nitrogen-containing ring size 5,697
+171,>= 4 unsaturated non-aromatic heteroatom-containing ring size 5,698
+172,>= 5 any ring size 5,699
+173,>= 5 saturated or aromatic carbon-only ring size 5,700
+174,>= 5 saturated or aromatic nitrogen-containing ring size 5,701
+175,>= 5 saturated or aromatic heteroatom-containing ring size 5,702
+176,>= 5 unsaturated non-aromatic carbon-only ring size 5,703
+177,>= 5 unsaturated non-aromatic nitrogen-containing ring size 5,704
+178,>= 5 unsaturated non-aromatic heteroatom-containing ring size 5,705
+179,>= 1 any ring size 6,706
+180,>= 1 saturated or aromatic carbon-only ring size 6,707
+181,>= 1 saturated or aromatic nitrogen-containing ring size 6,708
+182,>= 1 saturated or aromatic heteroatom-containing ring size 6,709
+183,>= 1 unsaturated non-aromatic carbon-only ring size 6,710
+184,>= 1 unsaturated non-aromatic nitrogen-containing ring size 6,711
+185,>= 1 unsaturated non-aromatic heteroatom-containing ring size 6,712
+186,>= 2 any ring size 6,713
+187,>= 2 saturated or aromatic carbon-only ring size 6,714
+188,>= 2 saturated or aromatic nitrogen-containing ring size 6,715
+189,>= 2 saturated or aromatic heteroatom-containing ring size 6,716
+190,>= 2 unsaturated non-aromatic carbon-only ring size 6,717
+191,>= 2 unsaturated non-aromatic nitrogen-containing ring size 6,718
+192,>= 2 unsaturated non-aromatic heteroatom-containing ring size 6,719
+193,>= 3 any ring size 6,720
+194,>= 3 saturated or aromatic carbon-only ring size 6,721
+195,>= 3 saturated or aromatic nitrogen-containing ring size 6,722
+196,>= 3 saturated or aromatic heteroatom-containing ring size 6,723
+197,>= 3 unsaturated non-aromatic carbon-only ring size 6,724
+198,>= 3 unsaturated non-aromatic nitrogen-containing ring size 6,725
+199,>= 3 unsaturated non-aromatic heteroatom-containing ring size 6,726
+200,>= 4 any ring size 6,727
+201,>= 4 saturated or aromatic carbon-only ring size 6,728
+202,>= 4 saturated or aromatic nitrogen-containing ring size 6,729
+203,>= 4 saturated or aromatic heteroatom-containing ring size 6,730
+204,>= 4 unsaturated non-aromatic carbon-only ring size 6,731
+205,>= 4 unsaturated non-aromatic nitrogen-containing ring size 6,732
+206,>= 4 unsaturated non-aromatic heteroatom-containing ring size 6,733
+207,>= 5 any ring size 6,734
+208,>= 5 saturated or aromatic carbon-only ring size 6,735
+209,>= 5 saturated or aromatic nitrogen-containing ring size 6,736
+210,>= 5 saturated or aromatic heteroatom-containing ring size 6,737
+211,>= 5 unsaturated non-aromatic carbon-only ring size 6,738
+212,>= 5 unsaturated non-aromatic nitrogen-containing ring size 6,739
+213,>= 5 unsaturated non-aromatic heteroatom-containing ring size 6,740
+214,>= 1 any ring size 7,741
+215,>= 1 saturated or aromatic carbon-only ring size 7,742
+216,>= 1 saturated or aromatic nitrogen-containing ring size 7,743
+217,>= 1 saturated or aromatic heteroatom-containing ring size 7,744
+218,>= 1 unsaturated non-aromatic carbon-only ring size 7,745
+219,>= 1 unsaturated non-aromatic nitrogen-containing ring size 7,746
+220,>= 1 unsaturated non-aromatic heteroatom-containing ring size 7,747
+221,>= 2 any ring size 7,748
+222,>= 2 saturated or aromatic carbon-only ring size 7,749
+223,>= 2 saturated or aromatic nitrogen-containing ring size 7,750
+224,>= 2 saturated or aromatic heteroatom-containing ring size 7,751
+225,>= 2 unsaturated non-aromatic carbon-only ring size 7,752
+226,>= 2 unsaturated non-aromatic nitrogen-containing ring size 7,753
+227,>= 2 unsaturated non-aromatic heteroatom-containing ring size 7,754
+228,>= 1 any ring size 8,755
+229,>= 1 saturated or aromatic carbon-only ring size 8,756
+230,>= 1 saturated or aromatic nitrogen-containing ring size 8,757
+231,>= 1 saturated or aromatic heteroatom-containing ring size 8,758
+232,>= 1 unsaturated non-aromatic carbon-only ring size 8,759
+233,>= 1 unsaturated non-aromatic nitrogen-containing ring size 8,760
+234,>= 1 unsaturated non-aromatic heteroatom-containing ring size 8,761
+235,>= 2 any ring size 8,762
+236,>= 2 saturated or aromatic carbon-only ring size 8,763
+237,>= 2 saturated or aromatic nitrogen-containing ring size 8,764
+238,>= 2 saturated or aromatic heteroatom-containing ring size 8,765
+239,>= 2 unsaturated non-aromatic carbon-only ring size 8,766
+240,>= 2 unsaturated non-aromatic nitrogen-containing ring size 8,767
+241,>= 2 unsaturated non-aromatic heteroatom-containing ring size 8,768
+242,>= 1 any ring size 9,769
+243,>= 1 saturated or aromatic carbon-only ring size 9,770
+244,>= 1 saturated or aromatic nitrogen-containing ring size 9,771
+245,>= 1 saturated or aromatic heteroatom-containing ring size 9,772
+246,>= 1 unsaturated non-aromatic carbon-only ring size 9,773
+247,>= 1 unsaturated non-aromatic nitrogen-containing ring size 9,774
+248,>= 1 unsaturated non-aromatic heteroatom-containing ring size 9,775
+249,>= 1 any ring size 10,776
+250,>= 1 saturated or aromatic carbon-only ring size 10,777
+251,>= 1 saturated or aromatic nitrogen-containing ring size 10,778
+252,>= 1 saturated or aromatic heteroatom-containing ring size 10,779
+253,>= 1 unsaturated non-aromatic carbon-only ring size 10,780
+254,>= 1 unsaturated non-aromatic nitrogen-containing ring size 10,781
+255,>= 1 unsaturated non-aromatic heteroatom-containing ring size 10,782
+256,>= 1 aromatic ring,783
+257,>= 1 hetero-aromatic ring,784
+258,>= 2 aromatic rings,785
+259,>= 2 hetero-aromatic rings,786
+260,>= 3 aromatic rings,787
+261,>= 3 hetero-aromatic rings,788
+262,>= 4 aromatic rings,789
+263,>= 4 hetero-aromatic rings,790
+264,Li-H,791
+265,Li-Li,792
+266,Li-B,793
+267,Li-C,794
+268,Li-O,795
+269,Li-F,796
+270,Li-P,797
+271,Li-S,798
+272,Li-Cl,799
+273,B-H,800
+274,B-B,801
+275,B-C,802
+276,B-N,803
+277,B-O,804
+278,B-F,805
+279,B-Si,806
+280,B-P,807
+281,B-S,808
+282,B-Cl,809
+283,B-Br,810
+284,C-H,811
+285,C-C,812
+286,C-N,813
+287,C-O,814
+288,C-F,815
+289,C-Na,816
+290,C-Mg,817
+291,C-Al,818
+292,C-Si,819
+293,C-P,820
+294,C-S,821
+295,C-Cl,822
+296,C-As,823
+297,C-Se,824
+298,C-Br,825
+299,C-I,826
+300,N-H,827
+301,N-N,828
+302,N-O,829
+303,N-F,830
+304,N-Si,831
+305,N-P,832
+306,N-S,833
+307,N-Cl,834
+308,N-Br,835
+309,O-H,836
+310,O-O,837
+311,O-Mg,838
+312,O-Na,839
+313,O-Al,840
+314,O-Si,841
+315,O-P,842
+316,O-K,843
+317,F-P,844
+318,F-S,845
+319,Al-H,846
+320,Al-Cl,847
+321,Si-H,848
+322,Si-Si,849
+323,Si-Cl,850
+324,P-H,851
+325,P-P,852
+326,As-H,853
+327,As-As,854
+328,C(~Br)(~C),855
+329,C(~Br)(~C)(~C),856
+330,C(~Br)(~H),857
+331,C(~Br)(:C),858
+332,C(~Br)(:N),859
+333,C(~C)(~C),860
+334,C(~C)(~C)(~C),861
+335,C(~C)(~C)(~C)(~C),862
+336,C(~C)(~C)(~C)(~H),863
+337,C(~C)(~C)(~C)(~N),864
+338,C(~C)(~C)(~C)(~O),865
+339,C(~C)(~C)(~H)(~N),866
+340,C(~C)(~C)(~H)(~O),867
+341,C(~C)(~C)(~N),868
+342,C(~C)(~C)(~O),869
+343,C(~C)(~Cl),870
+344,C(~C)(~Cl)(~H),871
+345,C(~C)(~H),872
+346,C(~C)(~H)(~N),873
+347,C(~C)(~H)(~O),874
+348,C(~C)(~H)(~O)(~O),875
+349,C(~C)(~H)(~P),876
+350,C(~C)(~H)(~S),877
+351,C(~C)(~I),878
+352,C(~C)(~N),879
+353,C(~C)(~O),880
+354,C(~C)(~S),881
+355,C(~C)(~Si),882
+356,C(~C)(:C),883
+357,C(~C)(:C)(:C),884
+358,C(~C)(:C)(:N),885
+359,C(~C)(:N),886
+360,C(~C)(:N)(:N),887
+361,C(~Cl)(~Cl),888
+362,C(~Cl)(~H),889
+363,C(~Cl)(:C),890
+364,C(~F)(~F),891
+365,C(~F)(:C),892
+366,C(~H)(~N),893
+367,C(~H)(~O),894
+368,C(~H)(~O)(~O),895
+369,C(~H)(~S),896
+370,C(~H)(~Si),897
+371,C(~H)(:C),898
+372,C(~H)(:C)(:C),899
+373,C(~H)(:C)(:N),900
+374,C(~H)(:N),901
+375,C(~H)(~H)(~H),902
+376,C(~N)(~N),903
+377,C(~N)(:C),904
+378,C(~N)(:C)(:C),905
+379,C(~N)(:C)(:N),906
+380,C(~N)(:N),907
+381,C(~O)(~O),908
+382,C(~O)(:C),909
+383,C(~O)(:C)(:C),910
+384,C(~S)(:C),911
+385,C(:C)(:C),912
+386,C(:C)(:C)(:C),913
+387,C(:C)(:C)(:N),914
+388,C(:C)(:N),915
+389,C(:C)(:N)(:N),916
+390,C(:N)(:N),917
+391,N(~C)(~C),918
+392,N(~C)(~C)(~C),919
+393,N(~C)(~C)(~H),920
+394,N(~C)(~H),921
+395,N(~C)(~H)(~N),922
+396,N(~C)(~O),923
+397,N(~C)(:C),924
+398,N(~C)(:C)(:C),925
+399,N(~H)(~N),926
+400,N(~H)(:C),927
+401,N(~H)(:C)(:C),928
+402,N(~O)(~O),929
+403,N(~O)(:O),930
+404,N(:C)(:C),931
+405,N(:C)(:C)(:C),932
+406,O(~C)(~C),933
+407,O(~C)(~H),934
+408,O(~C)(~P),935
+409,O(~H)(~S),936
+410,O(:C)(:C),937
+411,P(~C)(~C),938
+412,P(~O)(~O),939
+413,S(~C)(~C),940
+414,S(~C)(~H),941
+415,S(~C)(~O),942
+416,Si(~C)(~C),943
+417,C=C,944
+418,C#C,945
+419,C=N,946
+420,C#N,947
+421,C=O,948
+422,C=S,949
+423,N=N,950
+424,N=O,951
+425,N=P,952
+426,P=O,953
+427,P=P,954
+428,C(#C)(-C),955
+429,C(#C)(-H),956
+430,C(#N)(-C),957
+431,C(-C)(-C)(=C),958
+432,C(-C)(-C)(=N),959
+433,C(-C)(-C)(=O),960
+434,C(-C)(-Cl)(=O),961
+435,C(-C)(-H)(=C),962
+436,C(-C)(-H)(=N),963
+437,C(-C)(-H)(=O),964
+438,C(-C)(-N)(=C),965
+439,C(-C)(-N)(=N),966
+440,C(-C)(-N)(=O),967
+441,C(-C)(-O)(=O),968
+442,C(-C)(=C),969
+443,C(-C)(=N),970
+444,C(-C)(=O),971
+445,C(-Cl)(=O),972
+446,C(-H)(-N)(=C),973
+447,C(-H)(=C),974
+448,C(-H)(=N),975
+449,C(-H)(=O),976
+450,C(-N)(=C),977
+451,C(-N)(=N),978
+452,C(-N)(=O),979
+453,C(-O)(=O),980
+454,N(-C)(=C),981
+455,N(-C)(=O),982
+456,N(-O)(=O),983
+457,P(-O)(=O),984
+458,S(-C)(=O),985
+459,S(-O)(=O),986
+460,S(=O)(=O),987
+461,C-C-C#C,988
+462,O-C-C=N,989
+463,O-C-C=O,990
+464,N:C-S-[#1],991
+465,N-C-C=C,992
+466,O=S-C-C,993
+467,N#C-C=C,994
+468,C=N-N-C,995
+469,O=S-C-N,996
+470,S-S-C:C,997
+471,C:C-C=C,998
+472,S:C:C:C,999
+473,C:N:C-C,1000
+474,S-C:N:C,1001
+475,S:C:C:N,1002
+476,S-C=N-C,1003
+477,C-O-C=C,1004
+478,N-N-C:C,1005
+479,S-C=N-[#1],1006
+480,S-C-S-C,1007
+481,C:S:C-C,1008
+482,O-S-C:C,1009
+483,C:N-C:C,1010
+484,N-S-C:C,1011
+485,N-C:N:C,1012
+486,N:C:C:N,1013
+487,N-C:N:N,1014
+488,N-C=N-C,1015
+489,N-C=N-[#1],1016
+490,N-C-S-C,1017
+491,C-C-C=C,1018
+492,C-N:C-[#1],1019
+493,N-C:O:C,1020
+494,O=C-C:C,1021
+495,O=C-C:N,1022
+496,C-N-C:C,1023
+497,N:N-C-[#1],1024
+498,O-C:C:N,1025
+499,O-C=C-C,1026
+500,N-C:C:N,1027
+501,C-S-C:C,1028
+502,Cl-C:C-C,1029
+503,N-C=C-[#1],1030
+504,Cl-C:C-[#1],1031
+505,N:C:N-C,1032
+506,Cl-C:C-O,1033
+507,C-C:N:C,1034
+508,C-C-S-C,1035
+509,S=C-N-C,1036
+510,Br-C:C-C,1037
+511,[#1]-N-N-[#1],1038
+512,S=C-N-[#1],1039
+513,C-[As]-O-[#1],1040
+514,S:C:C-[#1],1041
+515,O-N-C-C,1042
+516,N-N-C-C,1043
+517,[#1]-C=C-[#1],1044
+518,N-N-C-N,1045
+519,O=C-N-N,1046
+520,N=C-N-C,1047
+521,C=C-C:C,1048
+522,C:N-C-[#1],1049
+523,C-N-N-[#1],1050
+524,N:C:C-C,1051
+525,C-C=C-C,1052
+526,[As]-C:C-[#1],1053
+527,Cl-C:C-Cl,1054
+528,C:C:N-[#1],1055
+529,[#1]-N-C-[#1],1056
+530,Cl-C-C-Cl,1057
+531,N:C-C:C,1058
+532,S-C:C-C,1059
+533,S-C:C-[#1],1060
+534,S-C:C-N,1061
+535,S-C:C-O,1062
+536,O=C-C-C,1063
+537,O=C-C-N,1064
+538,O=C-C-O,1065
+539,N=C-C-C,1066
+540,N=C-C-[#1],1067
+541,C-N-C-[#1],1068
+542,O-C:C-C,1069
+543,O-C:C-[#1],1070
+544,O-C:C-N,1071
+545,O-C:C-O,1072
+546,N-C:C-C,1073
+547,N-C:C-[#1],1074
+548,N-C:C-N,1075
+549,O-C-C:C,1076
+550,N-C-C:C,1077
+551,Cl-C-C-C,1078
+552,Cl-C-C-O,1079
+553,C:C-C:C,1080
+554,O=C-C=C,1081
+555,Br-C-C-C,1082
+556,N=C-C=C,1083
+557,C=C-C-C,1084
+558,N:C-O-[#1],1085
+559,O=N-C:C,1086
+560,O-C-N-[#1],1087
+561,N-C-N-C,1088
+562,Cl-C-C=O,1089
+563,Br-C-C=O,1090
+564,O-C-O-C,1091
+565,C=C-C=C,1092
+566,C:C-O-C,1093
+567,O-C-C-N,1094
+568,O-C-C-O,1095
+569,N#C-C-C,1096
+570,N-C-C-N,1097
+571,C:C-C-C,1098
+572,[#1]-C-O-[#1],1099
+573,N:C:N:C,1100
+574,O-C-C=C,1101
+575,O-C-C:C-C,1102
+576,O-C-C:C-O,1103
+577,N=C-C:C-[#1],1104
+578,C:C-N-C:C,1105
+579,C-C:C-C:C,1106
+580,O=C-C-C-C,1107
+581,O=C-C-C-N,1108
+582,O=C-C-C-O,1109
+583,C-C-C-C-C,1110
+584,Cl-C:C-O-C,1111
+585,C:C-C=C-C,1112
+586,C-C:C-N-C,1113
+587,C-S-C-C-C,1114
+588,N-C:C-O-[#1],1115
+589,O=C-C-C=O,1116
+590,C-C:C-O-C,1117
+591,C-C:C-O-[#1],1118
+592,Cl-C-C-C-C,1119
+593,N-C-C-C-C,1120
+594,N-C-C-C-N,1121
+595,C-O-C-C=C,1122
+596,C:C-C-C-C,1123
+597,N=C-N-C-C,1124
+598,O=C-C-C:C,1125
+599,Cl-C:C:C-C,1126
+600,[#1]-C-C=C-[#1],1127
+601,N-C:C:C-C,1128
+602,N-C:C:C-N,1129
+603,O=C-C-N-C,1130
+604,C-C:C:C-C,1131
+605,C-O-C-C:C,1132
+606,O=C-C-O-C,1133
+607,O-C:C-C-C,1134
+608,N-C-C-C:C,1135
+609,C-C-C-C:C,1136
+610,Cl-C-C-N-C,1137
+611,C-O-C-O-C,1138
+612,N-C-C-N-C,1139
+613,N-C-O-C-C,1140
+614,C-N-C-C-C,1141
+615,C-C-O-C-C,1142
+616,N-C-C-O-C,1143
+617,C:C:N:N:C,1144
+618,C-C-C-O-[#1],1145
+619,C:C-C-C:C,1146
+620,O-C-C=C-C,1147
+621,C:C-O-C-C,1148
+622,N-C:C:C:N,1149
+623,O=C-O-C:C,1150
+624,O=C-C:C-C,1151
+625,O=C-C:C-N,1152
+626,O=C-C:C-O,1153
+627,C-O-C:C-C,1154
+628,O=[As]-C:C:C,1155
+629,C-N-C-C:C,1156
+630,S-C:C:C-N,1157
+631,O-C:C-O-C,1158
+632,O-C:C-O-[#1],1159
+633,C-C-O-C:C,1160
+634,N-C-C:C-C,1161
+635,C-C-C:C-C,1162
+636,N-N-C-N-[#1],1163
+637,C-N-C-N-C,1164
+638,O-C-C-C-C,1165
+639,O-C-C-C-N,1166
+640,O-C-C-C-O,1167
+641,C=C-C-C-C,1168
+642,O-C-C-C=C,1169
+643,O-C-C-C=O,1170
+644,[#1]-C-C-N-[#1],1171
+645,C-C=N-N-C,1172
+646,O=C-N-C-C,1173
+647,O=C-N-C-[#1],1174
+648,O=C-N-C-N,1175
+649,O=N-C:C-N,1176
+650,O=N-C:C-O,1177
+651,O=C-N-C=O,1178
+652,O-C:C:C-C,1179
+653,O-C:C:C-N,1180
+654,O-C:C:C-O,1181
+655,N-C-N-C-C,1182
+656,O-C-C-C:C,1183
+657,C-C-N-C-C,1184
+658,C-N-C:C-C,1185
+659,C-C-S-C-C,1186
+660,O-C-C-N-C,1187
+661,C-C=C-C-C,1188
+662,O-C-O-C-C,1189
+663,O-C-C-O-C,1190
+664,O-C-C-O-[#1],1191
+665,C-C=C-C=C,1192
+666,N-C:C-C-C,1193
+667,C=C-C-O-C,1194
+668,C=C-C-O-[#1],1195
+669,C-C:C-C-C,1196
+670,Cl-C:C-C=O,1197
+671,Br-C:C:C-C,1198
+672,O=C-C=C-C,1199
+673,O=C-C=C-[#1],1200
+674,O=C-C=C-N,1201
+675,N-C-N-C:C,1202
+676,Br-C-C-C:C,1203
+677,N#C-C-C-C,1204
+678,C-C=C-C:C,1205
+679,C-C-C=C-C,1206
+680,C-C-C-C-C-C,1207
+681,O-C-C-C-C-C,1208
+682,O-C-C-C-C-O,1209
+683,O-C-C-C-C-N,1210
+684,N-C-C-C-C-C,1211
+685,O=C-C-C-C-C,1212
+686,O=C-C-C-C-N,1213
+687,O=C-C-C-C-O,1214
+688,O=C-C-C-C=O,1215
+689,C-C-C-C-C-C-C,1216
+690,O-C-C-C-C-C-C,1217
+691,O-C-C-C-C-C-O,1218
+692,O-C-C-C-C-C-N,1219
+693,O=C-C-C-C-C-C,1220
+694,O=C-C-C-C-C-O,1221
+695,O=C-C-C-C-C=O,1222
+696,O=C-C-C-C-C-N,1223
+697,C-C-C-C-C-C-C-C,1224
+698,C-C-C-C-C-C(C)-C,1225
+699,O-C-C-C-C-C-C-C,1226
+700,O-C-C-C-C-C(C)-C,1227
+701,O-C-C-C-C-C-O-C,1228
+702,O-C-C-C-C-C(O)-C,1229
+703,O-C-C-C-C-C-N-C,1230
+704,O-C-C-C-C-C(N)-C,1231
+705,O=C-C-C-C-C-C-C,1232
+706,O=C-C-C-C-C(O)-C,1233
+707,O=C-C-C-C-C(=O)-C,1234
+708,O=C-C-C-C-C(N)-C,1235
+709,C-C(C)-C-C,1236
+710,C-C(C)-C-C-C,1237
+711,C-C-C(C)-C-C,1238
+712,C-C(C)(C)-C-C,1239
+713,C-C(C)-C(C)-C,1240
+714,Cc1ccc(C)cc1,1241
+715,Cc1ccc(O)cc1,1242
+716,Cc1ccc(S)cc1,1243
+717,Cc1ccc(N)cc1,1244
+718,Cc1ccc(Cl)cc1,1245
+719,Cc1ccc(Br)cc1,1246
+720,Oc1ccc(O)cc1,1247
+721,Oc1ccc(S)cc1,1248
+722,Oc1ccc(N)cc1,1249
+723,Oc1ccc(Cl)cc1,1250
+724,Oc1ccc(Br)cc1,1251
+725,Sc1ccc(S)cc1,1252
+726,Sc1ccc(N)cc1,1253
+727,Sc1ccc(Cl)cc1,1254
+728,Sc1ccc(Br)cc1,1255
+729,Nc1ccc(N)cc1,1256
+730,Nc1ccc(Cl)cc1,1257
+731,Nc1ccc(Br)cc1,1258
+732,Clc1ccc(Cl)cc1,1259
+733,Clc1ccc(Br)cc1,1260
+734,Brc1ccc(Br)cc1,1261
+735,Cc1cc(C)ccc1,1262
+736,Cc1cc(O)ccc1,1263
+737,Cc1cc(S)ccc1,1264
+738,Cc1cc(N)ccc1,1265
+739,Cc1cc(Cl)ccc1,1266
+740,Cc1cc(Br)ccc1,1267
+741,Oc1cc(O)ccc1,1268
+742,Oc1cc(S)ccc1,1269
+743,Oc1cc(N)ccc1,1270
+744,Oc1cc(Cl)ccc1,1271
+745,Oc1cc(Br)ccc1,1272
+746,Sc1cc(S)ccc1,1273
+747,Sc1cc(N)ccc1,1274
+748,Sc1cc(Cl)ccc1,1275
+749,Sc1cc(Br)ccc1,1276
+750,Nc1cc(N)ccc1,1277
+751,Nc1cc(Cl)ccc1,1278
+752,Nc1cc(Br)ccc1,1279
+753,Clc1cc(Cl)ccc1,1280
+754,Clc1cc(Br)ccc1,1281
+755,Brc1cc(Br)ccc1,1282
+756,Cc1c(C)cccc1,1283
+757,Cc1c(O)cccc1,1284
+758,Cc1c(S)cccc1,1285
+759,Cc1c(N)cccc1,1286
+760,Cc1c(Cl)cccc1,1287
+761,Cc1c(Br)cccc1,1288
+762,Oc1c(O)cccc1,1289
+763,Oc1c(S)cccc1,1290
+764,Oc1c(N)cccc1,1291
+765,Oc1c(Cl)cccc1,1292
+766,Oc1c(Br)cccc1,1293
+767,Sc1c(S)cccc1,1294
+768,Sc1c(N)cccc1,1295
+769,Sc1c(Cl)cccc1,1296
+770,Sc1c(Br)cccc1,1297
+771,Nc1c(N)cccc1,1298
+772,Nc1c(Cl)cccc1,1299
+773,Nc1c(Br)cccc1,1300
+774,Clc1c(Cl)cccc1,1301
+775,Clc1c(Br)cccc1,1302
+776,Brc1c(Br)cccc1,1303
+777,CC1CCC(C)CC1,1304
+778,CC1CCC(O)CC1,1305
+779,CC1CCC(S)CC1,1306
+780,CC1CCC(N)CC1,1307
+781,CC1CCC(Cl)CC1,1308
+782,CC1CCC(Br)CC1,1309
+783,OC1CCC(O)CC1,1310
+784,OC1CCC(S)CC1,1311
+785,OC1CCC(N)CC1,1312
+786,OC1CCC(Cl)CC1,1313
+787,OC1CCC(Br)CC1,1314
+788,SC1CCC(S)CC1,1315
+789,SC1CCC(N)CC1,1316
+790,SC1CCC(Cl)CC1,1317
+791,SC1CCC(Br)CC1,1318
+792,NC1CCC(N)CC1,1319
+793,NC1CCC(Cl)CC1,1320
+794,NC1CCC(Br)CC1,1321
+795,ClC1CCC(Cl)CC1,1322
+796,ClC1CCC(Br)CC1,1323
+797,BrC1CCC(Br)CC1,1324
+798,CC1CC(C)CCC1,1325
+799,CC1CC(O)CCC1,1326
+800,CC1CC(S)CCC1,1327
+801,CC1CC(N)CCC1,1328
+802,CC1CC(Cl)CCC1,1329
+803,CC1CC(Br)CCC1,1330
+804,OC1CC(O)CCC1,1331
+805,OC1CC(S)CCC1,1332
+806,OC1CC(N)CCC1,1333
+807,OC1CC(Cl)CCC1,1334
+808,OC1CC(Br)CCC1,1335
+809,SC1CC(S)CCC1,1336
+810,SC1CC(N)CCC1,1337
+811,SC1CC(Cl)CCC1,1338
+812,SC1CC(Br)CCC1,1339
+813,NC1CC(N)CCC1,1340
+814,NC1CC(Cl)CCC1,1341
+815,NC1CC(Br)CCC1,1342
+816,ClC1CC(Cl)CCC1,1343
+817,ClC1CC(Br)CCC1,1344
+818,BrC1CC(Br)CCC1,1345
+819,CC1C(C)CCCC1,1346
+820,CC1C(O)CCCC1,1347
+821,CC1C(S)CCCC1,1348
+822,CC1C(N)CCCC1,1349
+823,CC1C(Cl)CCCC1,1350
+824,CC1C(Br)CCCC1,1351
+825,OC1C(O)CCCC1,1352
+826,OC1C(S)CCCC1,1353
+827,OC1C(N)CCCC1,1354
+828,OC1C(Cl)CCCC1,1355
+829,OC1C(Br)CCCC1,1356
+830,SC1C(S)CCCC1,1357
+831,SC1C(N)CCCC1,1358
+832,SC1C(Cl)CCCC1,1359
+833,SC1C(Br)CCCC1,1360
+834,NC1C(N)CCCC1,1361
+835,NC1C(Cl)CCCC1,1362
+836,NC1C(Br)CCCC1,1363
+837,ClC1C(Cl)CCCC1,1364
+838,ClC1C(Br)CCCC1,1365
+839,BrC1C(Br)CCCC1,1366
+840,CC1CC(C)CC1,1367
+841,CC1CC(O)CC1,1368
+842,CC1CC(S)CC1,1369
+843,CC1CC(N)CC1,1370
+844,CC1CC(Cl)CC1,1371
+845,CC1CC(Br)CC1,1372
+846,OC1CC(O)CC1,1373
+847,OC1CC(S)CC1,1374
+848,OC1CC(N)CC1,1375
+849,OC1CC(Cl)CC1,1376
+850,OC1CC(Br)CC1,1377
+851,SC1CC(S)CC1,1378
+852,SC1CC(N)CC1,1379
+853,SC1CC(Cl)CC1,1380
+854,SC1CC(Br)CC1,1381
+855,NC1CC(N)CC1,1382
+856,NC1CC(Cl)CC1,1383
+857,NC1CC(Br)CC1,1384
+858,ClC1CC(Cl)CC1,1385
+859,ClC1CC(Br)CC1,1386
+860,BrC1CC(Br)CC1,1387
+861,CC1C(C)CCC1,1388
+862,CC1C(O)CCC1,1389
+863,CC1C(S)CCC1,1390
+864,CC1C(N)CCC1,1391
+865,CC1C(Cl)CCC1,1392
+866,CC1C(Br)CCC1,1393
+867,OC1C(O)CCC1,1394
+868,OC1C(S)CCC1,1395
+869,OC1C(N)CCC1,1396
+870,OC1C(Cl)CCC1,1397
+871,OC1C(Br)CCC1,1398
+872,SC1C(S)CCC1,1399
+873,SC1C(N)CCC1,1400
+874,SC1C(Cl)CCC1,1401
+875,SC1C(Br)CCC1,1402
+876,NC1C(N)CCC1,1403
+877,NC1C(Cl)CC1,1404
+878,NC1C(Br)CCC1,1405
+879,ClC1C(Cl)CCC1,1406
+880,ClC1C(Br)CCC1,1407
+881,BrC1C(Br)CCC1,1408

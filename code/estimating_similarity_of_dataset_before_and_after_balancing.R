@@ -1,10 +1,10 @@
 library(rcdk)
 library(tidyverse)
 library(ape)
-source("my_theme.R")
-setwd("C:/Users/annel/OneDrive - Kruvelab/Kruvelab/computational/IE mudeli script ja failid/adduct_formation/data/training")
+source("code/my_theme.R")
 
-dataset = read_delim("balanced_adduct_data_training.csv",
+
+dataset = read_delim("data/training/balanced_adduct_data_training.csv",
                       delim = ",",
                       col_names = TRUE)
 
